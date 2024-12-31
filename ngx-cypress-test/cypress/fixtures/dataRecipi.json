@@ -1,0 +1,17 @@
+{
+    "email1": {
+        "recipients": ["guido01@gmail.com", "lucas02@gmail.com"],
+        "subject": "Reunión de equipo",
+        "message": "Hola equipo, recuerden que la reunión será mañana a las 10:00 AM. Saludos, Guido."
+    },
+    "email2": {
+        "recipients": ["ana03@gmail.com"],
+        "subject": "Entrega de proyecto",
+        "message": "Hola Ana, ¿puedes enviarme la última versión del proyecto antes del viernes? Gracias, Lucas."
+    },
+    "email3": {
+        "recipients": ["lucas02@gmail.com", "ana03@gmail.com"],
+        "subject": "Planificación de sprint",
+        "message": "Hola a ambos, necesitamos planificar el próximo sprint. ¿Están disponibles el lunes por la tarde? Saludos, Guido."
+    }
+}

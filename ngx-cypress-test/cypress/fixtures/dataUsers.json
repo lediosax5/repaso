@@ -1,0 +1,23 @@
+{
+    "a": {
+        "email": "guido01@gmail.com",
+        "password": "password123!",
+        "name": "Guido",
+        "lastName": "Piaggio",
+        "website": "www.guidoweb.com"
+    },
+    "b": {
+        "email": "lucas02@gmail.com",
+        "password": "securepass456!",
+        "name": "Lucas",
+        "lastName": "Martinez",
+        "website": "www.lucaswebsite.com"
+    },
+    "c": {
+        "email": "ana03@gmail.com",
+        "password": "mystrongpass789!",
+        "name": "Ana",
+        "lastName": "Gomez",
+        "website": "www.anaportfolio.com"
+    }
+}
