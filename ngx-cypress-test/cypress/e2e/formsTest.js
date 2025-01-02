@@ -59,16 +59,25 @@ describe('Basic, grid, inline, block, horizontal and labels logins with validati
     });
 });
 
-describe('Datepickers', () => {
+describe.only('Datepickers', () => {
     beforeEach('Redirect', () => {
         cy.visit('');
         features.forms();
         features.formsDate();
     });
 
-    it.only('Common dynamic datepicker', () => {
+    it('Common dynamic datepicker', () => {
         formDatepicker.openDatepicker('Common Datepicker');
-        const dateToAssert = formDatepicker.selectFutureDate(500);
+        const dateToAssert = formDatepicker.selectFutureDate(400);
         formDatepicker.assertDate('Common Datepicker', dateToAssert);
+    });
+
+    it('Range dynamic datepicker', () => {
+        formDatepicker.openDatepicker('Datepicker With Range');
+        const dateToAssert1 = formDatepicker.selectFutureDate(400);
+        const dateToAssert2 = formDatepicker.selectFutureDate(500);
+        const [startDate, endDate] = [dateToAssert1, dateToAssert2].sort((a, b) => new Date(a) - new Date(b));
+        const expectedDate = `${startDate} - ${endDate}`;
+        formDatepicker.assertDate('Datepicker With Range', expectedDate);
     });
 });
